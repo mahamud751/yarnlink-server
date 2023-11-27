@@ -7,6 +7,7 @@ import privacyRoute from "./routes/privacy.js";
 import supplierRoute from "./routes/supplier.js";
 import strengthRoute from "./routes/strength.js";
 import bannerRoute from "./routes/banner.js";
+import blogsRoute from "./routes/blogs.js";
 
 import cookieParser from "cookie-parser";
 import cors from "cors";
@@ -50,6 +51,7 @@ app.use("/api/privacy", privacyRoute);
 app.use("/api/supplier", supplierRoute);
 app.use("/api/banner", bannerRoute);
 app.use("/api/strength", strengthRoute);
+app.use("/api/blogs", blogsRoute);
 
 app.use((err, req, res, next) => {
   const errorStatus = err.status || 500;

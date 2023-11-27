@@ -35,7 +35,7 @@ export const deleteSupplier = async (req, res, next) => {
 
 export const updateSupplier = async (req, res, next) => {
   try {
-    const supplier = await supplier.findByIdAndUpdate(
+    const supplier = await Supplier.findByIdAndUpdate(
       req.params.id,
       { $set: req.body },
       { new: true }
