@@ -8,7 +8,6 @@ import {
 } from "../controllers/banner.js";
 
 const router = express.Router();
-
 router.post("/", CreateBanner);
 router.get("/", getBanner);
 router.get("/:id", getSingleBanner);

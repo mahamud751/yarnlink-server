@@ -129,7 +129,6 @@ export const updatePassword = async (req, res) => {
     const { userId, currentPassword, newPassword, name, email, phone } =
       req.body;
 
-    // Find the user by their ID
     const user = await User.findById(userId);
 
     if (!user) {
