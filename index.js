@@ -10,7 +10,7 @@ import bannerRoute from "./routes/banner.js";
 import blogsRoute from "./routes/blogs.js";
 import missionRoute from "./routes/mission.js";
 import visionRoute from "./routes/vision.js";
-import supportRoute from "./routes/supplier.js";
+import supportRoute from "./routes/support.js";
 
 import cookieParser from "cookie-parser";
 import cors from "cors";
