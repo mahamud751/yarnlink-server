@@ -7,7 +7,9 @@ const Blogs = new mongoose.Schema(
     },
     desc: {
       type: String,
-      required: true,
+    },
+    link: {
+      type: String,
     },
     photos: {
       type: [String],
