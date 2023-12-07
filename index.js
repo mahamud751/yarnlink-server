@@ -8,6 +8,9 @@ import supplierRoute from "./routes/supplier.js";
 import strengthRoute from "./routes/strength.js";
 import bannerRoute from "./routes/banner.js";
 import blogsRoute from "./routes/blogs.js";
+import missionRoute from "./routes/mission.js";
+import visionRoute from "./routes/vision.js";
+import supportRoute from "./routes/supplier.js";
 
 import cookieParser from "cookie-parser";
 import cors from "cors";
@@ -52,6 +55,9 @@ app.use("/api/supplier", supplierRoute);
 app.use("/api/banner", bannerRoute);
 app.use("/api/strength", strengthRoute);
 app.use("/api/blogs", blogsRoute);
+app.use("/api/mission", missionRoute);
+app.use("/api/vision", visionRoute);
+app.use("/api/support", supportRoute);
 
 app.use((err, req, res, next) => {
   const errorStatus = err.status || 500;
