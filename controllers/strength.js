@@ -35,7 +35,7 @@ export const deleteStrength = async (req, res, next) => {
 
 export const updateStrength = async (req, res, next) => {
   try {
-    const strength = await strength.findByIdAndUpdate(
+    const strength = await Strength.findByIdAndUpdate(
       req.params.id,
       { $set: req.body },
       { new: true }
